@@ -2,7 +2,6 @@ add_library(shared SHARED)
 
 target_sources(shared
     PRIVATE
-      src/ConcreteSingleton.cpp
       src/Simpleton.cpp)
 
 target_include_directories(shared

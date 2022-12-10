@@ -21,5 +21,4 @@ struct Singleton {
     static unique_ptr instance_;
 };
 
-#define DEFINE_SINGLETON_INSTANCE(x) \
-    template <> Singleton<x>::unique_ptr Singleton<x>::instance_{}
+template <class T> typename Singleton<T>::unique_ptr Singleton<T>::instance_;
